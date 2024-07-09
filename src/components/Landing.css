@@ -1,0 +1,21 @@
+.button{
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+#input{
+    width: 500px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+form{
+    text-align: center;
+}

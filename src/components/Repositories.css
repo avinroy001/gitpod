@@ -1,0 +1,11 @@
+.userinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.avatar{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
