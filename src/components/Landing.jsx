@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import "./Landing.css";
+
 export default function Landing({userName,setUserName}) {
     const [inputValue,setInputValue]=useState("");
   return (
@@ -12,6 +13,7 @@ export default function Landing({userName,setUserName}) {
       <input id="input" placeholder="Submit your GitHub username" onChange={(e)=>setInputValue(e.target.value)}/>
       <br/>
       <button className='button'>Search</button>
+      
     </form>
   );
 }

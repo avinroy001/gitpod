@@ -5,6 +5,7 @@ import Landing from './components/Landing';
 import axios from 'axios';
 import { Routes,Route, useNavigate } from 'react-router-dom';
 import Repositories from './components/Repositories';
+import RepoDetail from './components/RepoDetail';
 function App() {
   const[userName,setUserName]=useState("");
   const[data,setData]=useState();
@@ -36,6 +37,7 @@ function App() {
     </div>} />
 
         <Route path="/userdetail" element={<Repositories data={data}/>}/>
+        <Route path="/repodetail" element={< RepoDetail/>}/>
       </Routes>
    
   );

@@ -1,0 +1,14 @@
+.cardWrapper{
+    width: 500px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+img{
+    width: 70px;
+    border-radius: 50%;
+}
+.cardinfo{
+    width: 50px;
+}

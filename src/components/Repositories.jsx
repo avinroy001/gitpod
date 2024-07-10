@@ -3,9 +3,11 @@ import "./Repositories.css";
 import { useState } from 'react';
 import axios from 'axios';
 import Card from './Card';
+import { useNavigate } from 'react-router-dom';
 
 const Repositories = ({data}) => {
     const[repos,setRepos]=useState([]);
+    const nav=useNavigate()
 
     useEffect(()=>{
         const fetchData=async()=>{
@@ -30,11 +32,16 @@ const Repositories = ({data}) => {
                     <span>Follower: {data.followers}</span>
                 </div>
             </div>
+        </div>  
+        <div className='card'>
+        {repos.map((ele,idx)=>
+        <div className='cards'  onClick={() => nav("/repodetail", { state: { repo: ele } })}>
+             <Card repos={ele} key={idx} />
+        </div>
+       
+        )}
         </div>
         
-        {repos.map((ele)=>
-        <Card repos={ele}  />
-        )}
     </div>
   )
 }
