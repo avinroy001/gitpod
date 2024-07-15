@@ -15,7 +15,7 @@ function App() {
     const fetchData = async () => {
       if (userName) {
         try {
-          const response = await axios.get(`https://api.github.com/users/${userName}`);
+          const response = await axios.post(`http://localhost:3001/${userName}`);
           setData(response.data);
           nav("/userdetail");
         } catch (error) {
